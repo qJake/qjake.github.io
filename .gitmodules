@@ -1,0 +1,3 @@
+[submodule "reddit-thumb-quiz"]
+	path = reddit-thumb-quiz
+	url = https://github.com/qJake/reddit-thumb-quiz.git
