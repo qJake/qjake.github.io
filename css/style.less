@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+
+html
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+pre
+{
+    white-space: pre;
+}
+
+#codebg
+{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.5em;
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    
+    overflow: hidden;
+    
+    ::-webkit-scrollbar 
+    {
+        width: 0px;
+    }
+    
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    color: #4B4B4B;
+    
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+}
+    
+#splash
+{
+    background-color: #222;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    #name
+    {
+        text-align: center;
+        z-index: 2;
+        color: #EDEDED;
+        
+        h1, h2, h3
+        {
+            text-shadow: 2px 2px 1px black;
+        }
+        
+        h1
+        {
+            font-size: 7em;
+            font-weight: 300;
+            margin-bottom: 0.1em;
+            letter-spacing: 5px;
+        }
+        h2
+        {
+            font-size: 2em;
+            margin-bottom: 0.8em;
+            letter-spacing: 2px;
+        }
+    }
+}

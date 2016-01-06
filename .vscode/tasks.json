@@ -1,0 +1,9 @@
+// Transpiles LESS into minified CSS
+{
+    "version": "0.1.0",
+    "command": "lessc",
+    "showOutput": "silent",
+    "isShellCommand": true,
+    "args": ["--clean-css=\"--s0\"", "css/style.less", "css/style.min.css"],
+    "problemMatcher": "$lessCompile"
+}
