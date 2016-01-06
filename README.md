@@ -1,8 +1,6 @@
-# qjake.github.io
+# [Jake.Burgy.me\(http://jake.burgy.me/) (qjake.github.io)
 
-My public project website. Check it out: http://qjake.github.io/
-
-Developed with:
+My public project website. Developed with:
 
 * HTML5
 * LESS
