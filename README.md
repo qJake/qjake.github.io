@@ -2,9 +2,17 @@
 
 My public project website. Check it out: http://qjake.github.io/
 
+Developed with:
+
+* HTML5
+* LESS
+* JavaScript (jQuery 2.x)
+* Google Fonts (Lato, Source Code Pro)
+* Visual Studio Code
+
 ## Projects
 
-The following project sites are hosted on this site:
+The following web projects are hosted on this site:
 
 ### Reddit Thumb Quiz
 
