@@ -1,4 +1,4 @@
-# [Jake.Burgy.me\(http://jake.burgy.me/) (qjake.github.io)
+# [Jake.Burgy.me](http://jake.burgy.me/) (qjake.github.io)
 
 My public project website. Developed with:
 
