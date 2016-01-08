@@ -1,10 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,400,300,500,600);
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+
+@white: #EDEDED;
+@black: #222;
+@gray: #AAA;
+@featured-icon-size: 192px;
+@blue: rgb(20,95,180);
 
 html
 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    background-color: @white;
 }
 
 pre
@@ -12,10 +19,75 @@ pre
     white-space: pre;
 }
 
+small
+{
+    font-size: 0.9em;
+}
+
+a,
+a:hover,
+a:active,
+a:visited
+{
+    color: @blue;
+    text-decoration: none;
+    
+    & > img
+    {
+        text-decoration: none;
+    }
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+.flex-center
+{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured-icon
+{
+    width: @featured-icon-size;
+    height: @featured-icon-size;
+}
+
+div.blue,
+section.blue
+{
+    background-color: @blue;
+}
+p.blue,
+span.blue
+{
+    color: @blue;
+}
+div.gray,
+section.gray
+{
+    background-color: @gray;
+}
+p.gray,
+span.gray
+{
+    color: @gray;
+}
+
 #codebg
 {
     font-family: 'Source Code Pro', monospace;
-    font-size: 1.5em;
+    font-size: 1.4em;
     
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -43,23 +115,13 @@ pre
     
 #splash
 {
-    background-color: #222;
-    
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    background-color: @black;
     
     #name
     {
         text-align: center;
         z-index: 2;
-        color: #EDEDED;
+        color: @white;
         
         h1, h2, h3
         {
@@ -68,16 +130,90 @@ pre
         
         h1
         {
-            font-size: 7em;
+            font-size: 8em;
             font-weight: 300;
             margin-bottom: 0.1em;
-            letter-spacing: 5px;
+            letter-spacing: 10px;
         }
+        
         h2
         {
-            font-size: 2em;
+            font-size: 2.2em;
             margin-bottom: 0.8em;
-            letter-spacing: 2px;
+            letter-spacing: 4px;
+            font-weight: 400;
         }
+    }
+}
+
+#scrollmsg
+{
+    z-index: 3;
+    
+    opacity: 0;
+    bottom: 40px;
+    
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    
+    text-align: center;
+    color: @white;
+    
+    transition: opacity 1s, bottom 1.5s;
+    
+    &.active
+    {        
+        opacity: 1;
+        bottom: 20px;
+    }
+}
+
+#navicons
+{
+    padding: 3em 0;
+    
+    & > .tile
+    {
+        margin: 2em 4em;
+        text-align: center;
+        
+        p 
+        {
+            margin-top: 2em;
+            margin-bottom: 0.5em;
+            
+            & > a
+            {
+                font-size: 3em;
+            }
+        }
+    }
+}
+
+#description
+{
+    
+    & > div
+    {
+        font-size: 2.5em;
+        line-height: 1.4;
+        color: @white;
+        margin: 1.5em 15%;
+        font-style: italic;
+        font-weight: 200;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+}
+
+#credits
+{
+    text-align: center;
+    
+    small
+    {
+        display: block;
+        padding: 1em 0;
     }
 }
