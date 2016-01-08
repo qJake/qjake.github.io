@@ -15,13 +15,13 @@ The following web projects are hosted on this site:
 
 ### Tidbits
 
-http://qjake.github.io/tidbits/
+http://jake.burgy.me/tidbits/
 
 A blog-style site to aggregate random development knowledge, quirks, how-tos, and frustrations. Designed using [GitHub Pages](https://pages.github.com/) and [Jekyll](http://jekyllrb.com/).
 
 ### Reddit Thumb Quiz (Coming Soon)
 
-http://qjake.github.io/reddit-thumb-quiz/
+http://jake.burgy.me/reddit-thumb-quiz/
 
 An in-browser quiz designed to show Reddit thumbnails and have the player guess the subreddit it came from.
 
